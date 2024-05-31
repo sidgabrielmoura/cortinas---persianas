@@ -10,7 +10,7 @@ export default function Component() {
       <header className="px-4 lg:px-6 h-14 flex items-center bg-yellow-500 text-gray-950 justify-center fixed w-full border-b-[1.5px] z-20">
         <section className="flex items-center bg-yellow-500 text-gray-950 justify-between w-full max-w-[1440px]">
           <Link href="#" className="flex items-center justify-center" prefetch={false}>
-            <DoorClosedIcon className="h-6 w-6" />
+            <DoorClosedIcon className="h-6 w-6" /> 
             <span className="sr-only">cortinas &amp; persianas</span>
           </Link>
           <nav className="ml-auto flex gap-4 sm:gap-6">
