@@ -1,10 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @next/next/no-img-element */
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/BoQSOjm6tlF
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -14,27 +7,27 @@ import { JSX, SVGProps } from "react"
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-gray-100 dark:bg-gray-950">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-yellow-500 text-gray-950 justify-center">
+      <header className="px-4 lg:px-6 h-14 flex items-center bg-yellow-500 text-gray-950 justify-center fixed w-full border-b-[1.5px] z-20">
         <section className="flex items-center bg-yellow-500 text-gray-950 justify-between w-full max-w-[1440px]">
           <Link href="#" className="flex items-center justify-center" prefetch={false}>
             <DoorClosedIcon className="h-6 w-6" />
             <span className="sr-only">cortinas &amp; persianas</span>
           </Link>
           <nav className="ml-auto flex gap-4 sm:gap-6">
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-              Products
+            <Link href="#products" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Produtos
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-              About
+            <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Sobre
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-              Contact
+            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Contato
             </Link>
           </nav>
         </section>
       </header>
       <main className="flex-1 gap-5 flex flex-col">
-        <section className="w-full pt-12 md:pt-24 lg:pt-32">
+        <section className="w-full pt-12 md:pt-24 lg:pt-32 mt-5">
           <div className="container space-y-10 xl:space-y-16">
             <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
               <div>
@@ -47,7 +40,7 @@ export default function Component() {
                   </h1>
                   <p className="max-w-[600px] text-gray-700 md:text-xl dark:text-gray-400">
                     Descubra nossa requintada coleção de cortinas e persianas feitas sob medida, criadas para transformar o seu
-                    espaços de vida.
+                    espaço em vida.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -63,13 +56,13 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-yellow-500 text-gray-950">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-yellow-500 text-gray-950" id="products">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Explore nossa coleção de cortinas e persianas</h2>
                 <p className="max-w-[900px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Do clássico ao contemporâneo, a nossa diversificada gama de cortinas e cortinas irá elevar o ambiente de
+                  Do clássico ao contemporâneo, a nossa diversificada gama de cortinas e persianas irá elevar o ambiente de
                   qualquer sala.
                 </p>
               </div>
@@ -79,48 +72,45 @@ export default function Component() {
                 <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View</span>
                 </Link>
-                <div className="bg-[url(../assets/veludo.jpg)] mx-auto aspect-video overflow-hidden rounded-xl bg-cover bg-center sm:w-full" />
+                <div className="bg-[url(../assets/veludo.jpg)] mx-auto aspect-video overflow-hidden bg-cover bg-center sm:w-full" />
                 <div className="bg-gray-950 p-4 text-yellow-500">
                   <h3 className="font-bold text-xl">Cortina de veludo</h3>
-                  <p className="text-sm">$99.99</p>
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View</span>
                 </Link>
-                <div className="bg-[url(../assets/transparente.jpg)] mx-auto aspect-video overflow-hidden rounded-xl bg-cover bg-center sm:w-full" />
+                <div className="bg-[url(../assets/transparente.jpg)] mx-auto aspect-video overflow-hidden bg-cover bg-center sm:w-full" />
                 <div className="bg-gray-950 p-4 text-yellow-500">
                   <h3 className="font-bold text-xl">Cortinas transparentes</h3>
-                  <p className="text-sm">$79.99</p>
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                   <span className="sr-only">View</span>
                 </Link>
-                <div className="bg-[url(../assets/blackout.jpg)] mx-auto aspect-video overflow-hidden rounded-xl bg-cover bg-top sm:w-full" />
+                <div className="bg-[url(../assets/blackout.jpg)] mx-auto aspect-video overflow-hidden bg-cover bg-top sm:w-full" />
                 <div className="bg-gray-950 p-4 text-yellow-500">
                   <h3 className="font-bold text-xl">Cortinas blackout</h3>
-                  <p className="text-sm">$129.99</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-12 md:py-24 lg:py-32" id="about">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-yellow-500 px-3 py-1 text-sm text-gray-950">About Us</div>
+                <div className="inline-block rounded-lg bg-yellow-500 px-3 py-1 text-sm text-gray-950">Sobre nós</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-950">
                   Criando elegância atemporal 
                 </h2>
                 <p className="max-w-[900px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Em Cortinas &amp; Persianas, temos orgulho de nosso compromisso com a qualidade e a satisfação do cliente. Para
-                  há mais de uma década, transformamos espaços residenciais com nossa coleção requintada de peças personalizadas
-                  cortinas e cortinas. Nossa experiente equipe de designers e artesãos trabalha incansavelmente para garantir que cada
-                  peça que criamos é uma obra-prima.
+                  Em Cortinas &amp; Persianas, temos orgulho de nosso compromisso com a qualidade e a satisfação do cliente.
+                  Há mais de uma década, transformamos espaços residenciais com nossa coleção requintada de peças personalizadas
+                  cortinas e persianas. Nossa experiente equipe de designers e artesãos trabalha incansavelmente para garantir que cada
+                  peça criada seja uma obra-prima.
                 </p>
               </div>
             </div>
@@ -132,7 +122,7 @@ export default function Component() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold text-gray-950">Qualidade incomparável</h3>
                       <p className="text-gray-700 dark:text-gray-400">
-                        Nossas cortinas e cortinas são confeccionadas com os melhores materiais e atenção aos detalhes, garantindo durabilidade e elegância duradouras.
+                        Nossas cortinas e persianas são confeccionadas com os melhores materiais e atenção aos detalhes, garantindo durabilidade e elegância.
                       </p>
                     </div>
                   </li>
@@ -159,21 +149,21 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-yellow-500 text-gray-950">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-yellow-500 text-gray-950" id="contact">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Entre em contato</h2>
                 <p className="max-w-[900px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Have a custom project in mind? Fill out the form below and one of our design experts will be in touch
-                  to discuss your needs.
+                  Tem um projeto personalizado em mente? Preencha o formulário abaixo e um de nossos especialistas em design entrará em contato
+                  para discutir suas necessidades.
                 </p>
               </div>
               <div className="mx-auto w-full max-w-[900px] space-y-2">
                 <form className="flex flex-col space-y-2">
                   <Input
                     type="text"
-                    placeholder="Name"
+                    placeholder="Nome"
                     className="max-w-[900px] flex-1 bg-zinc-200 text-yellow-500 placeholder:text-gray-500 focus:ring-0 focus:border-yellow-500"
                   />
                   <Input
@@ -182,14 +172,14 @@ export default function Component() {
                     className="max-w-[900px] flex-1 bg-zinc-200 text-yellow-500 placeholder:text-gray-500 focus:ring-0 focus:border-yellow-500"
                   />
                   <Textarea
-                    placeholder="Message"
+                    placeholder="Mensagem"
                     className="max-w-[900px] flex-1 bg-zinc-200 text-yellow-500 placeholder:text-gray-500 focus:ring-0 focus:border-yellow-500"
                   />
                   <Button
                     type="submit"
                     className="bg-zinc-950 text-yellow-500 hover:bg-zinc-800 transition-colors duration-200 focus-visible:ring-1 focus-visible:ring-yellow-700"
                   >
-                    Submit
+                    Enviar
                   </Button>
                 </form>
               </div>
